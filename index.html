@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Font+inter" rel="stylesheet">
+    <title>Desafio 1 Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <a href="https://www.aluracursos.com"><img class="logo" src="./img/logo.png" alt="Logo de Alura"></a>
+    </header>
+
+    <main class="container">
+        <section class="contenido-izquierdo">
+            <div class="caja-mensaje">
+                <textarea id="textareaMensaje" class="mensaje" name="" cols="30" rows="10"
+                    placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="text-aviso">
+                <img class="img-admiracion" src="./img/Vector.png" alt="Simbolo de admiracion">
+                <p class="text-descripcion "> Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button type="button" id="btnEncriptar" class="encriptar">Encriptar</button>
+                <button type="button" id="btnDesencriptar" class="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="contenido-derecho">
+            <div class="caja-mensaje-2">
+                <div id="mostrar" class="oculto">
+                    <div class="caja-resultado">
+                        <textarea id="textareaResultado" cols="6" rows="4" class="resultado" placeholder=""></textarea>
+                    </div>
+                    <div class="boton-copy">
+                        <button type="button" id="btnCopiar" class="copiar" onclick="copiarTexto">Copiar</button>
+                    </div>
+                </div>
+                <div id="ocultar" class="cont-info activo">
+                    <img src="./img/muneco.png" alt="Muñeco con lupa" class="munheco">
+                    <h2 class="info-1">Ningún mensaje fue encontrado</h2>
+                    <p class="info-2">Ingresa solo texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
